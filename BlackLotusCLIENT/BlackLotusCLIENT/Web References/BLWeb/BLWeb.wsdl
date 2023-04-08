@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createConn">
+        <s:complexType />
+      </s:element>
+      <s:element name="createConnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="createConnResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertuserdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userFirstname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userLastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userLoginname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userLoginPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertuserdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertuserdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateuserdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userFirstname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userLastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userLoginname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userLoginPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateuserdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateuserdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteuserdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteuserdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteuserdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertcategorydata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="categoryname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="categorycost" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertcategorydataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertcategorydataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updatecategorydata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="categoryname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="categorycost" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="categoryid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updatecategorydataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updatecategorydataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deletecategorydata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="categoryid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deletecategorydataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deletecategorydataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertorderdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orderDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderCategory" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderItemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderQuantity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerTitle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerFname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerLname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerContactno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertorderdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertorderdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateorderdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orderStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateorderdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateorderdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteorderdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteorderdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteorderdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertflowerdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="flowername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flowerprice" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flowerstock" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertflowerdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertflowerdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateflowerdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="flowername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flowerprice" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flowerstock" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flowerid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateflowerdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateflowerdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteflowerdata">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="flowerid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteflowerdataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteflowerdataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="createConnSoapIn">
+    <wsdl:part name="parameters" element="tns:createConn" />
+  </wsdl:message>
+  <wsdl:message name="createConnSoapOut">
+    <wsdl:part name="parameters" element="tns:createConnResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertuserdataSoapIn">
+    <wsdl:part name="parameters" element="tns:insertuserdata" />
+  </wsdl:message>
+  <wsdl:message name="insertuserdataSoapOut">
+    <wsdl:part name="parameters" element="tns:insertuserdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateuserdataSoapIn">
+    <wsdl:part name="parameters" element="tns:updateuserdata" />
+  </wsdl:message>
+  <wsdl:message name="updateuserdataSoapOut">
+    <wsdl:part name="parameters" element="tns:updateuserdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteuserdataSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteuserdata" />
+  </wsdl:message>
+  <wsdl:message name="deleteuserdataSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteuserdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertcategorydataSoapIn">
+    <wsdl:part name="parameters" element="tns:insertcategorydata" />
+  </wsdl:message>
+  <wsdl:message name="insertcategorydataSoapOut">
+    <wsdl:part name="parameters" element="tns:insertcategorydataResponse" />
+  </wsdl:message>
+  <wsdl:message name="updatecategorydataSoapIn">
+    <wsdl:part name="parameters" element="tns:updatecategorydata" />
+  </wsdl:message>
+  <wsdl:message name="updatecategorydataSoapOut">
+    <wsdl:part name="parameters" element="tns:updatecategorydataResponse" />
+  </wsdl:message>
+  <wsdl:message name="deletecategorydataSoapIn">
+    <wsdl:part name="parameters" element="tns:deletecategorydata" />
+  </wsdl:message>
+  <wsdl:message name="deletecategorydataSoapOut">
+    <wsdl:part name="parameters" element="tns:deletecategorydataResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertorderdataSoapIn">
+    <wsdl:part name="parameters" element="tns:insertorderdata" />
+  </wsdl:message>
+  <wsdl:message name="insertorderdataSoapOut">
+    <wsdl:part name="parameters" element="tns:insertorderdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateorderdataSoapIn">
+    <wsdl:part name="parameters" element="tns:updateorderdata" />
+  </wsdl:message>
+  <wsdl:message name="updateorderdataSoapOut">
+    <wsdl:part name="parameters" element="tns:updateorderdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteorderdataSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteorderdata" />
+  </wsdl:message>
+  <wsdl:message name="deleteorderdataSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteorderdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertflowerdataSoapIn">
+    <wsdl:part name="parameters" element="tns:insertflowerdata" />
+  </wsdl:message>
+  <wsdl:message name="insertflowerdataSoapOut">
+    <wsdl:part name="parameters" element="tns:insertflowerdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateflowerdataSoapIn">
+    <wsdl:part name="parameters" element="tns:updateflowerdata" />
+  </wsdl:message>
+  <wsdl:message name="updateflowerdataSoapOut">
+    <wsdl:part name="parameters" element="tns:updateflowerdataResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteflowerdataSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteflowerdata" />
+  </wsdl:message>
+  <wsdl:message name="deleteflowerdataSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteflowerdataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BLWebSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="createConn">
+      <wsdl:input message="tns:createConnSoapIn" />
+      <wsdl:output message="tns:createConnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertuserdata">
+      <wsdl:input message="tns:insertuserdataSoapIn" />
+      <wsdl:output message="tns:insertuserdataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateuserdata">
+      <wsdl:input message="tns:updateuserdataSoapIn" />
+      <wsdl:output message="tns:updateuserdataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteuserdata">
+      <wsdl:input message="tns:deleteuserdataSoapIn" />
+      <wsdl:output message="tns:deleteuserdataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertcategorydata">
+      <wsdl:input message="tns:insertcategorydataSoapIn" />
+      <wsdl:output message="tns:insertcategorydataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updatecategorydata">
+      <wsdl:input message="tns:updatecategorydataSoapIn" />
+      <wsdl:output message="tns:updatecategorydataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deletecategorydata">
+      <wsdl:input message="tns:deletecategorydataSoapIn" />
+      <wsdl:output message="tns:deletecategorydataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertorderdata">
+      <wsdl:input message="tns:insertorderdataSoapIn" />
+      <wsdl:output message="tns:insertorderdataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateorderdata">
+      <wsdl:input message="tns:updateorderdataSoapIn" />
+      <wsdl:output message="tns:updateorderdataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteorderdata">
+      <wsdl:input message="tns:deleteorderdataSoapIn" />
+      <wsdl:output message="tns:deleteorderdataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertflowerdata">
+      <wsdl:input message="tns:insertflowerdataSoapIn" />
+      <wsdl:output message="tns:insertflowerdataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateflowerdata">
+      <wsdl:input message="tns:updateflowerdataSoapIn" />
+      <wsdl:output message="tns:updateflowerdataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteflowerdata">
+      <wsdl:input message="tns:deleteflowerdataSoapIn" />
+      <wsdl:output message="tns:deleteflowerdataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLWebSoap" type="tns:BLWebSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createConn">
+      <soap:operation soapAction="http://tempuri.org/createConn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertuserdata">
+      <soap:operation soapAction="http://tempuri.org/insertuserdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateuserdata">
+      <soap:operation soapAction="http://tempuri.org/updateuserdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteuserdata">
+      <soap:operation soapAction="http://tempuri.org/deleteuserdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertcategorydata">
+      <soap:operation soapAction="http://tempuri.org/insertcategorydata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatecategorydata">
+      <soap:operation soapAction="http://tempuri.org/updatecategorydata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletecategorydata">
+      <soap:operation soapAction="http://tempuri.org/deletecategorydata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertorderdata">
+      <soap:operation soapAction="http://tempuri.org/insertorderdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateorderdata">
+      <soap:operation soapAction="http://tempuri.org/updateorderdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteorderdata">
+      <soap:operation soapAction="http://tempuri.org/deleteorderdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertflowerdata">
+      <soap:operation soapAction="http://tempuri.org/insertflowerdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateflowerdata">
+      <soap:operation soapAction="http://tempuri.org/updateflowerdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteflowerdata">
+      <soap:operation soapAction="http://tempuri.org/deleteflowerdata" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BLWebSoap12" type="tns:BLWebSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createConn">
+      <soap12:operation soapAction="http://tempuri.org/createConn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertuserdata">
+      <soap12:operation soapAction="http://tempuri.org/insertuserdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateuserdata">
+      <soap12:operation soapAction="http://tempuri.org/updateuserdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteuserdata">
+      <soap12:operation soapAction="http://tempuri.org/deleteuserdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertcategorydata">
+      <soap12:operation soapAction="http://tempuri.org/insertcategorydata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatecategorydata">
+      <soap12:operation soapAction="http://tempuri.org/updatecategorydata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletecategorydata">
+      <soap12:operation soapAction="http://tempuri.org/deletecategorydata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertorderdata">
+      <soap12:operation soapAction="http://tempuri.org/insertorderdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateorderdata">
+      <soap12:operation soapAction="http://tempuri.org/updateorderdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteorderdata">
+      <soap12:operation soapAction="http://tempuri.org/deleteorderdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertflowerdata">
+      <soap12:operation soapAction="http://tempuri.org/insertflowerdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateflowerdata">
+      <soap12:operation soapAction="http://tempuri.org/updateflowerdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteflowerdata">
+      <soap12:operation soapAction="http://tempuri.org/deleteflowerdata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BLWeb">
+    <wsdl:port name="BLWebSoap" binding="tns:BLWebSoap">
+      <soap:address location="http://localhost:51272/BLWeb.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BLWebSoap12" binding="tns:BLWebSoap12">
+      <soap12:address location="http://localhost:51272/BLWeb.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

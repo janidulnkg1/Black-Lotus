@@ -1,0 +1,30 @@
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\csc.exe
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\System.Collections.Immutable.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\System.Reflection.Metadata.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\vbc.exe
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\VBCSCompiler.exe
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\roslyn\VBCSCompiler.exe.config
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\BL Web Server.dll.config
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\BL Web Server.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\BL Web Server.pdb
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\mysql.data.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\obj\Debug\BL Web Server.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\obj\Debug\BL Web Server.pdb
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\obj\Debug\BL Web Server.csprojResolveAssemblyReference.cache
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\Newtonsoft.Json.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\System.Net.Http.Formatting.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\Newtonsoft.Json.xml
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\System.Net.Http.Formatting.xml
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\System.Net.Http.Extensions.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\System.Net.Http.Primitives.dll
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\System.Net.Http.Extensions.xml
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\bin\System.Net.Http.Primitives.xml
+E:\Documents\Programming\C#\BL Project\BL Web Server\BL Web Server\obj\Debug\BL Web Server.csproj.App.config

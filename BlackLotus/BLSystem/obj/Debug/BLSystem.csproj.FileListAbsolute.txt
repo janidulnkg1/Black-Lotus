@@ -1,0 +1,41 @@
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\bin\Debug\BLSystem.exe.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\bin\Debug\BLSystem.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\bin\Debug\BLSystem.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.adminPage.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.categoryPage.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.flowerStockPage.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.loginPage.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.orderPage.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.Properties.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.userMainPanel.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.csproj.GenerateResource.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\BlackLotus\BLSystem\obj\Debug\BLSystem.pdb
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\BLSystem.exe.config
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\BLSystem.exe
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\BLSystem.pdb
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\Newtonsoft.Json.dll
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\System.Net.Http.dll
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\System.Net.Http.Extensions.dll
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\System.Net.Http.Formatting.dll
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\System.Net.Http.Primitives.dll
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\System.Net.Http.WebRequest.dll
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\Newtonsoft.Json.xml
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\System.Net.Http.xml
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\System.Net.Http.Formatting.xml
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\bin\Debug\System.Net.Http.WebRequest.xml
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.csprojResolveAssemblyReference.cache
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.adminPage.resources
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.categoryPage.resources
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.createEmployeeAccount.resources
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.flowerStockPage.resources
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.loginPage.resources
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.orderPage.resources
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.Properties.Resources.resources
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.userMainPanel.resources
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.csproj.GenerateResource.Cache
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.exe
+E:\Documents\Programming\C#\BL Project\BlackLotus\BLSystem\obj\Debug\BLSystem.pdb
